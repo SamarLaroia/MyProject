@@ -1,8 +1,9 @@
 # MyProject
 TIC TAC TOE GAME 
-from IPython.display import clear_output
+    
+    from IPython.display import clear_output
 
-def display_board(board):
+    def display_board(board):
     clear_output()  # Remember, this only works in jupyter!
     
     print('   |   |')
@@ -44,7 +45,7 @@ def display_board(board):
     
     import random
 
-def choose_first():
+    def choose_first():
     if random.randint(0, 1) == 0:
         return 'Player 2'
     else:
@@ -74,7 +75,7 @@ def choose_first():
     
     print('Welcome to Tic Tac Toe!')
 
-while True:
+    while True:
     # Reset the board
     theBoard = [' '] * 10
     player1_marker, player2_marker = player_input()
